@@ -35,17 +35,22 @@ import FormDemo7 from './components/form/FormDemo7.jsx'
 import FormDemo8 from './components/form/FormDemo8.jsx'
 import { FormDemo5c } from './components/form/FormDemo5(c).jsx'
 import { FormDemo6c } from './components/form/FormDemo6(c).jsx'
+import FormDemo9 from './components/form/FormDemo9.jsx'
+import LoginPage from './components/GtuProject/LoginPage.jsx'
+import SignUp from './components/GtuProject/SignUp.jsx'
+import ApiDemo1 from './components/apis/ApiDemo1.jsx'
+import SearchMovie from './components/apis/omdb/SearchMovie.jsx'
+import { MovieDetail } from './components/apis/omdb/MovieDetail.jsx'
 
 
 function App() {
   return (
       <div>
-    <NavbarLink></NavbarLink>
-      <Routes>
-        <Route path='/home' element = {<Hotstarhome/>}></Route>
+     <NavbarLink></NavbarLink>
+       <Routes>
+        {/* <Route path='/home' element = {<Hotstarhome/>}></Route>
         <Route path='/movies' element = {<HotstarMovie/>}></Route>
         <Route path='/' element = {<HotstarWelcome/>}></Route>
-        {/* <Route path='/error' element = {<Error404/>}></Route> */}
         <Route path='/*' element = {<Error404/>}></Route>
         <Route path='/play/:id' element = {<Play/>}></Route>
         <Route path='/formdemo1' element = {<FormDemo1/>}></Route>
@@ -58,8 +63,14 @@ function App() {
         <Route path='/formdemo8' element = {<FormDemo8/>}></Route>
         <Route path='/formdemo5c' element= {<FormDemo5c/>}></Route>
         <Route path='/formdemo6c' element= {<FormDemo6c/>}></Route>
+        <Route path='/formdemo9' element= {<FormDemo9/>}></Route> */}
+        <Route path='/loginpage' element={<LoginPage/>}></Route>
+        <Route path='/signup' element={<SignUp/>}></Route>
+        <Route path='/apidemo1' element={<ApiDemo1/>}></Route>
+        <Route path='/searchmovie' element={<SearchMovie/>}></Route>
+        <Route path='/moviedetail/:id' element={<MovieDetail/>}></Route>
       </Routes>
-    
+     
   </div>
    
   )
